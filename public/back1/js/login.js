@@ -4,6 +4,13 @@ $(function(){
 // 2. 用户密码不能为空,长度为2-6位
 // 3. 用户密码  长度为6-12位
 $('#form').bootstrapValidator({
+  //设置小图标
+  feedbackIcons: {
+    valid: 'glyphicon glyphicon-ok',  // 效验成功的字体图标
+    invalid: 'glyphicon glyphicon-remove',  // 效验失败的字体图标
+    validating: 'glyphicon glyphicon-refresh' // 效验中的状态
+  },
+
   // 配置字段
   fields:{
     username:{
